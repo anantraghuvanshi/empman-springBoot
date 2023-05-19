@@ -1,10 +1,7 @@
 package com.anant.empmanager.model;
 
-import jakarta.persistence.*;
-
 import java.io.Serializable;
 
-@Entity
 public class Employee implements Serializable {
 
     @Id
