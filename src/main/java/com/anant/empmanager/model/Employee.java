@@ -19,7 +19,7 @@ public class Employee implements Serializable {
     @Column(nullable = false, updatable = false)
     private String employeeCode;
 
-    public Employee(Long id, String name, String email, String jobTitle, String phone, String imageUrl, String employeeCode) {
+    Employee(Long id, String name, String email, String jobTitle, String phone, String imageUrl, String employeeCode) {
         this.id = id;
         this.name = name;
         this.email = email;
