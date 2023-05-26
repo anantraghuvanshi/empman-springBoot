@@ -14,20 +14,24 @@ public class Employee implements Serializable {
     private String name;
     private String email;
     private String jobTitle;
+
+
     private String phone;
     private String imageUrl;
     @Column(nullable = false, updatable = false)
     private String employeeCode;
 
-    Employee(Long id, String name, String email, String jobTitle, String phone, String imageUrl, String employeeCode) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.jobTitle = jobTitle;
-        this.phone = phone;
-        this.imageUrl = imageUrl;
-        this.employeeCode = employeeCode;
-    }
+    //Default constructor is already present that is why even though we comment this section there would not be any change.
+
+//    Employee(Long id, String name, String email, String jobTitle, String phone, String imageUrl, String employeeCode) {
+//        this.id = id;
+//        this.name = name;
+//        this.email = email;
+//        this.jobTitle = jobTitle;
+//        this.phone = phone;
+//        this.imageUrl = imageUrl;
+//        this.employeeCode = employeeCode;
+//    }
 
     public Long getId() {
         return id;
